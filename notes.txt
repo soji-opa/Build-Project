@@ -1,0 +1,41 @@
+Basic design workflow for building website
+
+Page 1 - Home Page 
+
+1. Build the project
+    - creating the folder strucuture
+    - adding files
+    - connecting files
+
+2. Navbar
+    -2 divs; one rep. links and the other for icons
+    - position of navbar is fixed
+    - use gray color
+
+3. Build landing page - section (1)
+
+4. Build the about me - section (2)
+    - section requires the use of a flexbox
+    - 2 divs; with one for the picture and another for the text
+
+5. section (3) - with a lovely image
+
+6. section (4)
+    - section requires the use of a flexbox
+    - 2 divs; with one for the pictures (4 images required) and another for the text
+
+7. section (5)
+    - Another image for aesthetics
+
+8. Build the about me - section (6)
+    - section requires the use of a flexbox
+    - 2 divs; with one for the pictures (2 images required) and another for the text
+
+9. build the contact me section - section (7)
+    - section is to be linked to the Navbar element contact us
+    - create a form element
+    - information to be saved on local storage
+
+Page 3 - Online Ordering system
+
+    - Requires me to pace to look up a JS tutorial
