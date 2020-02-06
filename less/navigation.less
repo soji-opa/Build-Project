@@ -43,49 +43,69 @@
 //   }
 // } // .main-navigation
 
-nav{
-    width: 100%;
-    height: 60px;
-    background-color: gray;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
+header{
+    position: relative;
+    //height: 60px;
 
-        // style for links
-        .links{
-            font-size: 1.4rem;
-            width: 35%;
-            display: flex;
-            justify-content: space-evenly;
-            text-transform: uppercase;
-
-            //style for a tag
-            a{
-                text-decoration: none;
-                cursor: pointer;
-
-                &:hover{
-                    color: hotpink;
-                }
-            }
-        }// closing tag for links
-
-        //style for icon-links
-        .icon-links{
-            
-            width: 17%;
+    // styling for nav
+    nav{
+        width: 100%;
+        height: 60px;
+        background-color: lighten(@pink, -5%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        right: 0;
     
-            .fab{
-                margin-right: 24px;
-                width: 15px;
-                font-size: 2rem;
-
-                &:hover{
-                    color: hotpink;
+            // style for links
+            .links{
+                font-size: 1.4rem;
+                width: 35%;
+                display: flex;
+                height: 1rem;
+                justify-content: space-evenly;
+                text-transform: uppercase;
+    
+                //style for a tag
+                a{
+                    text-decoration: none;
                     cursor: pointer;
+                    
+                    
+    
+                    &:hover{
+                        
+                        color: hotpink;
+                        transform: scale(1.2);
+                        transition: transform .3s ease-in-out .01s;
+                         
+                    }
+                }//closing for a tag
+            }// closing tag for links
+    
+            //style for icon-links
+            .icon-links{
+                
+                width: 17%;
+                transition: all .5s ease-in-out;
+        
+                .fab{
+                    margin-right: 24px;
+                    width: 15px;
+                    font-size: 2rem;
+                    cursor: pointer;
+    
+                    &:hover{
+                        color: hotpink;
+                        transition: color .5s ease-in-out .01s;
+                        transform: scale(1.2);
+                    }
                 }
-            }
-        }
-
+            }//closing  for icon-links
+    
+    }//closing for te nav
 }

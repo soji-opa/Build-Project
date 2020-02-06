@@ -4,11 +4,11 @@
 //   align-items: center;
 // }
 
-// .border-radius(@radius) {
-//   -webkit-border-radius: @radius;
-//      -moz-border-radius: @radius;
-//           border-radius: @radius;
-// }
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
 
 // .button-creator(@width, @height, @bg-color, @font-color, @font-size) {
 //   .border-radius(15px);
@@ -30,3 +30,23 @@
 //     color: @button-bg;
 //   }
 // }
+
+.button-mix(@btn-bg, @height, @width, @font-color, @font-size){
+    .border-radius(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: @btn-bg;
+    height: @height;
+    width: @width;
+    color: @font-color;
+    font-size: @font-size;
+    line-height: 1.5;
+
+    &:hover{
+        background-color:#60271B ;
+        color: rgba(235, 226, 234, 0.945) ;
+    }
+
+}
