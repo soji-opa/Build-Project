@@ -1,0 +1,82 @@
+.menu-header{
+    position: relative;
+    .menu-img{
+        margin-bottom: -1.9px;
+        img{
+            width: 100%;
+            height: 600px;
+        }
+    }
+     
+    .menu-txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(235, 226, 234, 0.945);
+
+        h1{
+            font-size: 4rem;
+            font-weight: 200;
+        }
+    }
+}
+
+//styling for main-section
+.main-content{
+    
+    background-color:lighten(#FEE5E4, -1%);
+    width: 100%;
+    height: 1650px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    // styling for content-wrapper
+    .content-wrapper{
+        background-color:lighten(#FEE5E4, -1%);
+        width: 90%;
+       //border: 1px solid black;
+        position: absolute;
+        top: -10%;
+        
+        .content-elem-wrap{
+            background-color:lighten(#ffffff, -1%);
+            margin: 0 5%;
+            margin-top: 4%;
+
+            h2{
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                padding: 2% 0;
+                text-align: center;
+            }
+
+            // styling for contents-elements
+            .content-elements{
+                .contents1{
+                    padding-top: 1.5%;
+                }
+               // styling for contents2
+                .contents2{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 3% 0;
+                    .content2-img{
+                        width: 10%;
+                    }
+                    .wrapper{
+                        //padding-top: 2%;
+                        width: 89%;
+                        p{
+                            font-size: 1.8rem;
+                            padding-bottom: 1.5%;
+                        }
+                    }
+                } // closing tag for contents2
+
+            }// closing tag for content-elements
+        }
+       
+    }// closing tag for content-wrapper
+}//closing tag for main-section
